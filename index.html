@@ -4,23 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
     <title>Dxw Take-Home Challenge</title>
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="center">Institute for Government </h1>
 
-      <div id="searchWrapper" class="row">
-        <input
-          type="text"
-          name="searchBar"
-          id="searchBar"
+    <!-- Search Bar -->
+  
+    <section class="container">
+    <h1>Institute For Government</h1>
+
+      <form>
+        <i class="fas fa-search"></i>
+        <input 
+          type="text" 
+          name="" 
+          id="search-item" 
           placeholder="Search"
-          />
-      </div>
-      <ul id="charactersList"></ul>
+          onkeyup="search()">
+      </form>
+
+      <!-- Organisation List -->
+
+    <div class="product-list" id="product-list">
+      <h3 class="error"></h3>
+
     </div>
+
+    </section>
 
   <script src="script.js"></script>
   </body>
